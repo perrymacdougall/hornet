@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width" initial-scale="1.0">
-  <title>InsideOut Studio | Toronto, Ontario (Leaside)</title>
-  <link rel="stylesheet" href="/style.css" type="text/css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li>Cage</li>
-        <li>Cage</li>
-        <li>Cage</li>
-        <li>Cage</li>
-        <li>Cage</li>
-        <li>Cage</li>
-      </ul>
-    </nav>
-  </header>
-</body>
-</html>
+<?php
+get_header();
+
+if ( have_posts() ) :
+  while ( have_posts() ) : the_post();
+    the_title('<h1>', '</h1>');
+    the_content();
+  endwhile;
+else :
+  _e( 'Sorry, no posts matched your criteria.', 'textdomain' );
+endif;
+
+// get_sidebar();
+get_footer();
+?>
