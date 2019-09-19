@@ -5,10 +5,20 @@ if ( ! function_exists( 'hornet_setup' ) ) :
         register_nav_menus(
             array(
                 'Primary' => __( 'Header Menu', 'hornet' ),
-                'Footer' => __( 'Footer Menu', 'hornet' ),
-                'Social' => __( 'Social Links', 'hornet' )
+                'Footer'  => __( 'Footer Menu', 'hornet' ),
+                'Social'  => __( 'Social Links', 'hornet' )
             )
         );
+
+        add_theme_support( 'custom-logo',
+            array(
+                'height'      => 190,
+                'width'       => 190,
+                'flex-height' => false,
+                'flex-width'  => false
+            )
+        );
+
     }
 endif;
 
