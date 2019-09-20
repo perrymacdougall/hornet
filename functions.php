@@ -19,6 +19,17 @@ if ( ! function_exists( 'hornet_setup' ) ) :
             )
         );
 
+        add_theme_support( 'custom-header', 
+            apply_filters( 'custom-header-args',
+                array(
+                    'width' => 1200,
+                    'height' => 650,
+                    'flex-height' => true,
+                    'video' => true, 
+                )
+            )
+        );
+
     }
 endif;
 
