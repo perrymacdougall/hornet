@@ -12,8 +12,8 @@ if ( ! function_exists( 'hornet_setup' ) ) :
 
         add_theme_support( 'custom-logo',
             array(
-                'height'      => 190,
-                'width'       => 190,
+                'height'      => 75,
+                'width'       => 75,
                 'flex-height' => false,
                 'flex-width'  => false
             )

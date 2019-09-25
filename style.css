@@ -8,19 +8,38 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: hornet
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background: white;
+    position: fixed;
+    /* top: 0; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
 }
 
 #wp-custom-header-video {
     width: 100%;
     height: 100vh;
-}
-
-h1 {
-    color: tomato;
-}
-
-nav {
-    position: fixed;
 }

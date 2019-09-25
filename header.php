@@ -13,6 +13,15 @@
         <?php } else { ?>
             <div class="site-title"><?php bloginfo( 'name' ); ?></div>
         <?php } ?>
+
+        <?php if ( has_nav_menu( 'Primary' ) ) :
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'Primary',
+                    'menu_class'     => 'header-menu'
+                )
+            );
+        endif; ?>
     </nav>
 
     <div class="custom-header">
